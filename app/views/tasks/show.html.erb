@@ -1,3 +1,7 @@
 <h1><%= @task.title %></h1>
 <p><%= @task.details %></p>
-<p><%= link_to "Back to list", tasks_path %></p>
+
+<ul class="actions">
+    <li><%= link_to "📋", tasks_path %></li>
+    <li><%= link_to "📝", edit_task_path %></li>
+</ul>
